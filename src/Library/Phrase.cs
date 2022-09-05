@@ -52,12 +52,12 @@ namespace WordsPhrases
 
             foreach (Word word in this.words)
             {
-                phrase.Append(" ");
                 phrase.Append(word.Text);
+                phrase.Append(" ");
             }
 
-            string result = phrase.ToString();
-
+            //Se agrega el trim al texto para dejarlo sin errores
+            string result = phrase.ToString().Trim();
             // Remueve el primer espacio que se agrega siempre
 
             return result;

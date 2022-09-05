@@ -30,7 +30,9 @@ namespace WordsPhrases
         {
             get
             {
-                return this.text;
+
+                ////Se agrega el trim al texto para dejarlo sin errores
+                return this.text.Trim();
             }
 
             set
